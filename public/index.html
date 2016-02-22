@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Karma Tutorial</title>
+</head>
+<body>
+    <div ng-app="MyApp">
+        <span>Type something here : </span>
+        <input type="text" ng-model="testInputTxt">
+        <p/>
+        <span>Original text typed : </span>
+        <span ng-bind="testInputTxt"></span>
+        
+        <p/>
+        <span>Modified text : {{testInputTxt | reverse }}</span>
+    </div>
+</body>
+<script src="/node_modules/angular/angular.js"></script>
+<script src="/src/app.js"></script>
+</html>
